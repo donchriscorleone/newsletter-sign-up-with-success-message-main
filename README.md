@@ -29,10 +29,10 @@ Users should be able to:
 ### Screenshot
 
 Desktop view at 1440px:
-![](./screenshots/Desktop1440.jpg)
+![](./screenshots/Desktop1440.png)
 
 Mobile view at 375px:
-![](./screenshots/Mobile375.jpg)
+![](./screenshots/Mobile375.png)
 
 ### Links
 
