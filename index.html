@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body class="bg-neutral-200">
+  <main>
+    <section id="main-card" class="card">
+      <div class="card-wrapper">
+        <h1 class="card-title">Stay updated!</h1>
+  
+        <div class="card-content">
+          <span class="card-content-desc">Join 60,000+ product managers receiving monthly updates on:</span>
+          <ul class="list">
+            <li class="list__item">
+              <span class="list__item-text">Product discovery and building what matters</span>
+            </li>
+            <li class="list__item">
+              <span class="list__item-text">Measuring to ensure updates are a success</span>
+            </li>
+            <li class="list__item">
+              <span class="list__item-text">And much more!</span>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="card-action">
+          <form method="POST" id="form">
+            <div class="label-container">
+              <label class="label" for="email">Email Address</label>
+              <div class="label-content">
+                <input class="input" required name="email" id="email" type="email" placeholder="email@company.com">
+              </div>
+              <span class="label-error">Valid email required</span>
+            </div>
+            <button id="form-button" type="submit" class="btn btn-neutral">Subscribe to monthly newsletter</button>
+          </form>
+        </div>
+      </div>
+      <div class="card-bg"></div>
+    </section>
+
+    <section id="success-card" class="card card-success no-display">
+      <span class="card-icon icon icon-check" aria-label="An icon of check."></span>
+      <div class="card-wrapper">
+        <h1 class="card-title">Thanks for subscribing!</h1>
+  
+        <div class="card-content">
+          <span class="card-content-desc clr-neutral-200">
+            A confirmation email has been sent to <em class="bold">ash@loremcompany.com</em>. 
+            Please open it and click the button inside to confirm your subscription.
+          </span>
+        </div>
+  
+        <div class="card-action">
+          <button class="btn btn-neutral" id="btn-dismiss">Dismiss message</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="attribution">
+      <span>Challenged by <a href="#" target="_blank">Frontend Mentor</a></span>
+      <div class="links">
+        <span>&copy; Coded by Christopher II</span>
+        <a href="https://twitter.com/topheriidev" target="_blank">Twitter</a>
+        <a href="https://www.instagram.com/devchristopherii/" target="_blank">Instagram</a>
+        <a href="https://github.com/donchriscorleone" target="_blank">GitHub</a>
+        <a href="https://www.frontendmentor.io/profile/donchriscorleone" target="_blank">FrontendMentor</a>
+      </div>
+    </div>
+  </main>
+  
+  <script src="./script.js"></script>
+</body>
+</html>
