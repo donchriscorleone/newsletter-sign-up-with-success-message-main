@@ -419,3 +419,9 @@ main {
 .attribution span {
     color: var(--neutral-400);
 }
+
+@media screen and (max-width: 800px) {
+    .attribution {
+        display: none;
+    }
+}
