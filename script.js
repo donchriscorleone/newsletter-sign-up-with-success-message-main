@@ -1,6 +1,7 @@
 const form = document.getElementById('form');
 const formbtn = document.getElementById('form-button');
 const email = document.getElementById('email');
+const successEmail = document.getElementById('success-email');
 const mainCard = document.getElementById('main-card');
 const successCard = document.getElementById('success-card');
 
@@ -19,6 +20,7 @@ formbtn.addEventListener('click' , (e) => {
 
         mainCard.classList.add('no-display');
         successCard.classList.remove('no-display');
+        successEmail.innerText = email.value;
         email.value = "";
         isEmailValid = false;
     }
